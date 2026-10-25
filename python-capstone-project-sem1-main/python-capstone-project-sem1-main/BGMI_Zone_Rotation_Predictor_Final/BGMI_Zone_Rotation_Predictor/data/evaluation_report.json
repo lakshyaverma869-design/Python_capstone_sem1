@@ -1,0 +1,89 @@
+{
+  "source": "furkanalialtuntas/pubg-safe-zone-predictor zone_data.csv; license not stated",
+  "source_reference": "https://raw.githubusercontent.com/furkanalialtuntas/pubg-safe-zone-predictor/main/zone_data.csv",
+  "source_license": "No license found in inspected repository listing; source CSV is not bundled.",
+  "game": "PUBG per project README; platform/date/tournament provenance not stated; BGMI unverified.",
+  "source_matches": 6,
+  "source_observations": 24,
+  "possible_adjacent_transitions": 18,
+  "usable_transitions": 13,
+  "rejected_transitions": 5,
+  "rejection_reasons": {
+    "next_circle_not_contained_in_current": 5
+  },
+  "rejected_transition_records": [
+    {
+      "match_id": "mac02",
+      "phase": 3,
+      "zone_number": 3,
+      "next_phase": 4,
+      "reason": "next_circle_not_contained_in_current",
+      "center_distance_px": 60.29925372672534,
+      "current_radius_px": 78.0,
+      "next_radius_px": 58.0,
+      "containment_excess_px": 40.29925372672534
+    },
+    {
+      "match_id": "mac03",
+      "phase": 2,
+      "zone_number": 2,
+      "next_phase": 3,
+      "reason": "next_circle_not_contained_in_current",
+      "center_distance_px": 205.23401277566055,
+      "current_radius_px": 160.0,
+      "next_radius_px": 96.0,
+      "containment_excess_px": 141.23401277566052
+    },
+    {
+      "match_id": "mac03",
+      "phase": 3,
+      "zone_number": 3,
+      "next_phase": 4,
+      "reason": "next_circle_not_contained_in_current",
+      "center_distance_px": 268.06156009394556,
+      "current_radius_px": 96.0,
+      "next_radius_px": 41.0,
+      "containment_excess_px": 213.06156009394556
+    },
+    {
+      "match_id": "mac04",
+      "phase": 3,
+      "zone_number": 3,
+      "next_phase": 4,
+      "reason": "next_circle_not_contained_in_current",
+      "center_distance_px": 108.74741376235114,
+      "current_radius_px": 96.0,
+      "next_radius_px": 33.0,
+      "containment_excess_px": 45.74741376235113
+    },
+    {
+      "match_id": "mac06",
+      "phase": 2,
+      "zone_number": 2,
+      "next_phase": 3,
+      "reason": "next_circle_not_contained_in_current",
+      "center_distance_px": 69.2314957226839,
+      "current_radius_px": 163.0,
+      "next_radius_px": 107.0,
+      "containment_excess_px": 13.231495722683917
+    }
+  ],
+  "evaluation": {
+    "method": "leave-one-match-out; held-out match excluded entirely from analog search",
+    "held_out_matches_with_predictions": 6,
+    "held_out_matches_total": 6,
+    "held_out_transitions": 13,
+    "skipped_transitions_without_comparable_phase": 0,
+    "metrics": {
+      "mae_next_x_canonical_units": 125.73833933057232,
+      "mae_next_y_canonical_units": 166.9495552990698,
+      "euclidean_center_error_canonical_units": 223.54199062085712,
+      "mae_next_radius_canonical_units": 8.350872428542335,
+      "mae_next_x_reference_pixels": 142.46153846153845,
+      "mae_next_y_reference_pixels": 189.1538461538461,
+      "euclidean_center_error_reference_pixels": 253.27307537343114,
+      "mae_next_radius_reference_pixels": 9.461538461538465
+    },
+    "limitation": "Six matches and at most 18 transitions are insufficient to claim reliable BGMI prediction."
+  }
+}

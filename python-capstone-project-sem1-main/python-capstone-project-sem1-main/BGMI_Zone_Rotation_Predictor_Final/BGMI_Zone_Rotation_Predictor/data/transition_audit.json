@@ -1,0 +1,66 @@
+{
+  "source": "furkanalialtuntas/pubg-safe-zone-predictor zone_data.csv; license not stated",
+  "source_reference": "https://raw.githubusercontent.com/furkanalialtuntas/pubg-safe-zone-predictor/main/zone_data.csv",
+  "coordinate_system": "Canonical Erangel reference units: source reference raster pixels (1181x1133, origin top-left) uniformly scaled by 1000/1133; X, Y and radius share units",
+  "tolerance_source_pixels": 12.0,
+  "observations": 24,
+  "candidate_transitions": 18,
+  "accepted_transitions": 13,
+  "rejected_transitions": [
+    {
+      "match_id": "mac02",
+      "phase": 3,
+      "zone_number": 3,
+      "next_phase": 4,
+      "reason": "next_circle_not_contained_in_current",
+      "center_distance_px": 60.29925372672534,
+      "current_radius_px": 78.0,
+      "next_radius_px": 58.0,
+      "containment_excess_px": 40.29925372672534
+    },
+    {
+      "match_id": "mac03",
+      "phase": 2,
+      "zone_number": 2,
+      "next_phase": 3,
+      "reason": "next_circle_not_contained_in_current",
+      "center_distance_px": 205.23401277566055,
+      "current_radius_px": 160.0,
+      "next_radius_px": 96.0,
+      "containment_excess_px": 141.23401277566052
+    },
+    {
+      "match_id": "mac03",
+      "phase": 3,
+      "zone_number": 3,
+      "next_phase": 4,
+      "reason": "next_circle_not_contained_in_current",
+      "center_distance_px": 268.06156009394556,
+      "current_radius_px": 96.0,
+      "next_radius_px": 41.0,
+      "containment_excess_px": 213.06156009394556
+    },
+    {
+      "match_id": "mac04",
+      "phase": 3,
+      "zone_number": 3,
+      "next_phase": 4,
+      "reason": "next_circle_not_contained_in_current",
+      "center_distance_px": 108.74741376235114,
+      "current_radius_px": 96.0,
+      "next_radius_px": 33.0,
+      "containment_excess_px": 45.74741376235113
+    },
+    {
+      "match_id": "mac06",
+      "phase": 2,
+      "zone_number": 2,
+      "next_phase": 3,
+      "reason": "next_circle_not_contained_in_current",
+      "center_distance_px": 69.2314957226839,
+      "current_radius_px": 163.0,
+      "next_radius_px": 107.0,
+      "containment_excess_px": 13.231495722683917
+    }
+  ]
+}
